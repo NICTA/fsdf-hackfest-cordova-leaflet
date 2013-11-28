@@ -44,5 +44,5 @@ Create a new Cordova CLI project
     cordova run android
     
     # Run on emulator
-
+    cordova emulate android
 
