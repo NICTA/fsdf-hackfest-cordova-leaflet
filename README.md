@@ -30,11 +30,14 @@ Create a new Cordova CLI project
 
     # Install the geolocation plugin
     cordova plugin add org.apache.cordova.geolocation
+
+    # Back up the default www dir
+    mv www www-bak
     
-    # Copy the www dir into the project root e.g.
-    # cp -R ~/Downloads/www ./www
+    # Clone the repo as the www dir
+    git clone git@github.com:NICTA/fsdf-hackfest-cordova-leaflet.git www
     
-    # Run locally in a browser
+    # Run/debug locally in a browser
     google-chrome www/index.html
     
     # Run on device
